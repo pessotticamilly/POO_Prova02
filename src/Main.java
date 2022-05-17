@@ -105,7 +105,7 @@ public class Main {
 
                 if (base == lado1 && base == lado2 && lado1 == lado2) {
                     return new TrianguloEquilatero(codigo, base, lado1, lado2);
-                } else if (base == lado1 && base == lado2 || lado1 == base && lado1 == lado2 || lado2 == base && lado2 == lado1) {
+                } else if (base == lado1 || base == lado2 || lado1 == base || lado1 == lado2 || lado2 == base || lado2 == lado1) {
                     return new TrianguloIsosceles(codigo, base, lado1, lado2);
                 } else if (base != lado1 && base != lado2 && lado1 != lado2) {
                     return new TrianguloEscaleno(codigo, base, lado1, lado2);
